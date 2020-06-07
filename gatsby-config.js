@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Ranch to Plate`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `The best place to find a ranch near you and order fresh meat straight from the rancher. No hassle, save money, know where your food comes from.`,
+    ketwords: 'beef, pork, chicken, ranch near me, ranches near me, order meat, order fresh meat, find a rancher, ranches near me, ranch, cows, eggs, meat, fresh meat, fresh beef, order beef, local beef, local meat, local food, best place to find local meat',
     author: `@gatsbyjs`,
   },
   plugins: [
