@@ -1,80 +1,86 @@
-import React, { Component } from "react"
 
-import Layout from "../components/layout"
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap'
+import React, { useState } from "react"
 import '../components/ContactForm.css'
-import axios from 'axios'
 
-class ContactForm extends Component{
-  constructor(){
-    super()
+const ContactForm = () => {
 
-      this.state = {
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+  const [formState, setFormState] = useState({
+    name: "",
+    email:"",
+    phone:"",
+    message:""
+  })
+
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
   }
 
-  handleChange = e =>{
-    this.setState({[e.target.name]: e.target.value})
-  }
-
-  async handleSubmit(e){
-    e.preventDefault()
-
-    const { name, email, phone, message } = this.state
-    const form = await axios.post('/api/from',{
-      name,
-      email,
-      phone,
-      message
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]:e.target.value
     })
   }
 
-  render(){
-    return(
-        <Form onSubmit ={this.handleSubmit}>
-        <FormGroup>
-          <Label for="name">Name: </Label>
-          <Input
-            type="text"
-            name="name"
-            onChange={this.handleChange}/>
-        </FormGroup>
-    
-        <FormGroup>
-          <Label for="email">Email: </Label>
-          <Input
-            type="email"
-            name="email"
-            onChange={this.handleChange}/>
-        </FormGroup>
-    
-        <FormGroup>
-          <Label for="phone">Phone Number: </Label>
-          <Input
-            type="text"
-            name="phone"
-            onChange={this.handleChange}/>
-        </FormGroup>
-    
-        <FormGroup>
-          <Label for="message">Message: </Label>
-          <Input
-            type="textarea"
-            name="phone"
-            onChange={this.handleChange}/>
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
-    );
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   }
-}
-  
+
+
+    return (
+      <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <label htmlFor="name">Name</label>
+        <input 
+        id="name" 
+        name="name"
+        type="text" 
+        onChange={handleChange} 
+        value={formState.name} 
+        placeholder="Enter your name" 
+        />
+        <label htmlFor="email">Email</label>
+        <input 
+        id="email" 
+        name="email"
+        type="email" 
+        onChange={handleChange} 
+        value={formState.email} 
+        placeholder="Enter your Email" 
+        />
+        <label htmlFor="phone">Phone#</label>
+        <input 
+        id="phone" 
+        name="phone"
+        type="text" 
+        onChange={handleChange} 
+        value={formState.phone} 
+        placeholder="Enter your phone number" 
+        />
+        <label htmlFor="messahe">Message</label>
+        <input 
+        id="message" 
+        name="message"
+        type="textarea" 
+        onChange={handleChange} 
+        value={formState.message} 
+        placeholder="Enter your message here..." 
+        />
+        <button type="submit">Submit</button>
+      </form>
+    );
+
+  }
 
 
 export default ContactForm
