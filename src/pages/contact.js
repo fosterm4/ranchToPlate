@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
 import Layout from "../components/layout"
-import '../components/aboutUs.css'
+import '../components/Contact.css'
 import ContactForm from "../components/ContactForm"
 
 class Contact extends Component{

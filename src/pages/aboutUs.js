@@ -2,6 +2,7 @@ import React, { Component } from "react"
 
 import Layout from "../components/layout"
 import ResponsivePlayer from "../components/video/responsivePlayer"
+import '../components/aboutUs.css'
 
 class AboutUs extends Component{
   render(){
