@@ -1,13 +1,31 @@
-import React from "react"
+import React, { Component } from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import ResponsivePlayer from "../components/video/responsivePlayer"
 
-const AboutUsPage = () => (
-  <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+class AboutUs extends Component{
+  render(){
+    return(
+      <Layout>
+        <div className = "background">
+        </div>
+        <h1>
+          A Service Born from Corona...
+        </h1>
+        <p>
+          aboutus description goes here blah blah blah blah blah blah
+          blahrnjgfaweogtrno kwernjgoerkogmerglo erkognmloerngoergloo erkngolerngolrengonrognoerngore ngoneriognerongoern
+        </p>
+        <p>
+          aboutus promo goes below
+        </p>
+        <div className = "vidPlayer">     
+      <ResponsivePlayer url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"/></div>
+      </Layout>
+    );
+  }
+}
+  
 
-export default AboutUsPage
+
+export default AboutUs

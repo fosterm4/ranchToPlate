@@ -16,3 +16,11 @@
 .Cards h2{
   font-size: 40px;
 }
+
+.contactForm{
+  margin: 10px 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  justify-items: center;
+}

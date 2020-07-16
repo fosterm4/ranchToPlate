@@ -1,0 +1,13 @@
+.background{
+  background: url('../images/green-tractor-175389.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  margin: 20px;
+}
+
+p{
+  margin: 30px;
+}

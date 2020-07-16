@@ -1,7 +1,7 @@
 
 import React, { useState } from "react"
 import '../components/ContactForm.css'
-
+import {Form, FormGroup,Input, Label, Button} from 'reactstrap'
 const ContactForm = () => {
 
   const [formState, setFormState] = useState({
@@ -30,7 +30,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Success! Your information has been submitted and you will be contacted shortly."))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -38,46 +38,52 @@ const ContactForm = () => {
 
 
     return (
-      <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="name">Name</label>
-        <input 
-        id="name" 
-        name="name"
-        type="text" 
-        onChange={handleChange} 
-        value={formState.name} 
-        placeholder="Enter your name" 
-        />
-        <label htmlFor="email">Email</label>
-        <input 
-        id="email" 
-        name="email"
-        type="email" 
-        onChange={handleChange} 
-        value={formState.email} 
-        placeholder="Enter your Email" 
-        />
-        <label htmlFor="phone">Phone#</label>
-        <input 
-        id="phone" 
-        name="phone"
-        type="text" 
-        onChange={handleChange} 
-        value={formState.phone} 
-        placeholder="Enter your phone number" 
-        />
-        <label htmlFor="messahe">Message</label>
-        <input 
-        id="message" 
-        name="message"
-        type="textarea" 
-        onChange={handleChange} 
-        value={formState.message} 
-        placeholder="Enter your message here..." 
-        />
-        <button type="submit">Submit</button>
-      </form>
+        <Form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <div className="wholeForm">
+            <FormGroup>
+              <Input type="hidden" name="form-name" value="contact" />
+              <Label htmlFor="name">Name</Label>
+              <Input 
+              id="name" 
+              name="name"
+              type="text" 
+              onChange={handleChange} 
+              value={formState.name} 
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label htmlFor="email">Email</Label>
+              <Input 
+              id="email" 
+              name="email"
+              type="email" 
+              onChange={handleChange} 
+              value={formState.email} 
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label htmlFor="phone">Phone#</Label>
+              <Input 
+              id="phone" 
+              name="phone"
+              type="text" 
+              onChange={handleChange} 
+              value={formState.phone} 
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label htmlFor="message">Message</Label>
+              <Input 
+              id="message" 
+              name="message"
+              type="textarea" 
+              onChange={handleChange} 
+              value={formState.message} 
+              />
+            </FormGroup>
+            <Button type="submit">Submit</Button>
+          </div>
+        </Form>
     );
 
   }

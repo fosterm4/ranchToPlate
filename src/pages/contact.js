@@ -1,11 +1,10 @@
 import React, { Component } from "react"
 
 import Layout from "../components/layout"
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap'
-import '../components/Contact.css'
+import '../components/aboutUs.css'
 import ContactForm from "../components/ContactForm"
 
-class ContactPage extends Component{
+class Contact extends Component{
   render(){
     return(
       <Layout>
@@ -19,7 +18,9 @@ class ContactPage extends Component{
         <div className = "Cards">
           <h2>Join our Growing Community of Farmers and Ranchers today</h2> 
         </div>
-        <ContactForm/>
+        <div className = "contactForm">
+          <ContactForm/>
+        </div>
       </Layout>
     );
   }
@@ -27,4 +28,4 @@ class ContactPage extends Component{
   
 
 
-export default ContactPage
+export default Contact
