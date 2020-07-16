@@ -1,0 +1,13 @@
+.background{
+  background: url('../images/cattle-drive-793676_1280.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  margin:50px;
+  text-align: center;
+}
+.formSpace{
+  margin: 70px;
+}

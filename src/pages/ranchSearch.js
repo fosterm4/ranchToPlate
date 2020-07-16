@@ -1,13 +1,25 @@
-import React from "react"
+import React, { Component } from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import '../components/ranchSearch.css'
+import SearchForm from '../components/SearchForm'
 
-const RanchSearchPage = () => (
-  <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+class RanchSearch extends Component{
+  render(){
+    return(
+      <Layout>
+        <div className = "background"/>
+        <h1>
+          Find a ranch near you
+        </h1>
+        <div className = "formSpace">
+          <SearchForm/>
+        </div>
+      </Layout>
+    );
+  }
+}
+  
 
-export default RanchSearchPage
+
+export default RanchSearch

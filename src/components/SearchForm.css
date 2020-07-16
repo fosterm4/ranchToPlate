@@ -1,0 +1,41 @@
+
+Form{
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: auto;
+  height: 100%;
+  background-color: rgb(224, 224, 224);
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  border-radius: 25px;
+}
+
+.wholeForm Label{
+  margin: 10px;
+}
+.wholeForm Input{
+  margin: 10px;
+}
+.wholeForm Button{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(220, 160, 23, 1);
+  padding: 9px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.26);
+  border-radius: 20px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin: 20px;
+}
+.wholeForm Button:hover{
+  background: rgba(220, 140, 23, 0.945);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+  outline: none;
+}
+
