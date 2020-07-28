@@ -14,14 +14,13 @@ class AboutUs extends Component{
           A Service Born from Corona...
         </h1>
         <p>
-          aboutus description goes here blah blah blah blah blah blah
-          blahrnjgfaweogtrno kwernjgoerkogmerglo erkognmloerngoergloo erkngolerngolrengonrognoerngore ngoneriognerongoern
+          aboutus description goes here
         </p>
         <p>
           aboutus promo goes below
         </p>
         <div className = "vidPlayer">     
-      <ResponsivePlayer url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"/></div>
+      <ResponsivePlayer url = "https://youtu.be/NpEaa2P7qZI"/></div>
       </Layout>
     );
   }

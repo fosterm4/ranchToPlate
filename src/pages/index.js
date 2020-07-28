@@ -20,9 +20,9 @@ const IndexPage = () => (
       </div>
     </div>
     <div className = "Cards">
-      <h2>Experience the Ranch to Plate difference</h2> 
+      <h2>Experience the Ranch to Plate difference(STILL IN DEVELOPMENT...)</h2> 
       <div className = "vidPlayer">     
-      <ResponsivePlayer url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"/></div>
+      <ResponsivePlayer url = "https://youtu.be/NpEaa2P7qZI"/></div>
       <div className="CardGroup">
 
         <Card title = "Keep it Local"
