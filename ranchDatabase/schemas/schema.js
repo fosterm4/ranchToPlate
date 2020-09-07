@@ -23,14 +23,27 @@ export default createSchema({
           title: 'Ranch Name'
         },
         {
+          title: 'Slug',
           name: 'slug',
           type: 'slug',
-          title: 'Slug',
+          options: {
+            source: 'ranchName',
+            maxLength: 200, // will be ignored if slugify is set
+            slugify: input => input
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .slice(0, 200)
+          }
         },
         {
           name: 'profileImage',
           type: 'image',
           title: 'Profile Image',
+        },
+        {
+          name: 'headerImage',
+          type: 'image',
+          title: 'Header Image',
         },
         {
           name: 'address',
