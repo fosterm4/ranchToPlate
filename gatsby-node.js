@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions }) => {
   }
   const projects = result.data.allSanityRanch.edges || []
   projects.forEach((edge, index) => {
-    const path = `/ranch/${edge.node.slug.current}`
+    const path = `/searchResults/${edge.node.slug.current}`
     createPage({
       path,
       component: require.resolve("./src/templates/ranchProfile.js"),
