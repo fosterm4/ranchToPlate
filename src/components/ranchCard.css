@@ -1,0 +1,41 @@
+#Card{
+  width: 80%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+  transform-style: preserve-3d;
+  transition: all .7s linear;
+}
+
+
+.profileImage{
+  height: 250px;
+  width: 250px;
+  display:inline-block;
+}
+
+#Card h3{
+  color: black;
+  font-size: 30px;
+  position: relative;
+
+  margin: 0 auto;
+  width: 190px;
+}
+
+#Card p{
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400px;
+  font-size: 18px;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.words{
+  margin-left: 250px;
+  margin-top: -250px;
+  height: 250px;
+  padding: 10px;
+}

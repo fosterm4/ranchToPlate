@@ -12,7 +12,6 @@ class SearchResults extends Component{
         <h1>
           Results
         </h1>
-        
       </Layout>
     );
   }
