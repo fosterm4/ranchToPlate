@@ -1,0 +1,12 @@
+.copyright{
+  text-align: center;
+}
+
+.mainFooter{
+  background-color: gray;
+  box-shadow: 0 50vh 0 50vh gray;
+  text-align: center;
+}
+.mainFooter p{
+  margin:10px;
+}
