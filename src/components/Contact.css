@@ -1,12 +1,15 @@
 .onBackground{
   background: url('../images/night-sky-2116521_1920.jpg');
-  height: 600px;
+  height: 500px;
   background-size: cover;
   background-position: center;
 }
+.backgroundHeader{
+  text-align: center;
+}
 
 .backgroundHeader h2{
-  margin:0 0 0 0;
+  margin:0 auto;
   padding: 100px 150px;
   color: white;
   font-size: 70px;
