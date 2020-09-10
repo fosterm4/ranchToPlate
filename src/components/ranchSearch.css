@@ -8,6 +8,6 @@ h1{
   margin:50px;
   text-align: center;
 }
-.formSpace{
-  margin: 70px;
+.formSpace h1{
+  margin: 40px;
 }

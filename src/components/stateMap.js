@@ -11,7 +11,7 @@ class StateMap extends Component {
   render() {
     return (
       <div className="App">
-        <USAMap onClick={this.mapHandler} />
+        <USAMap defaultFill = "#dca017" onClick={this.mapHandler} />
       </div>
     );
   }
