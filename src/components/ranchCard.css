@@ -43,3 +43,20 @@
   height: 250px;
   padding: 10px;
 }
+
+@media(max-width: 767px){
+  #Card{
+    height: 500px;
+    width: 250px;
+    text-align: center;
+  }
+  .profileImage{
+    width: 300px;
+    margin-left: -25px;
+  }
+  .words{
+    margin-left: auto;
+    margin-top: auto;
+    padding: 10px;
+  }
+}
