@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import USAMap from "react-usa-map";
 import './StateMap.css'
+import {stateClick} from '../pages/searchResults'
 
 class StateMap extends Component {
   /* mandatory */
   mapHandler = (event) => {
-    alert(event.target.dataset.name);
+    stateClick(event.target.dataset.name);
   };
  
   render() {
