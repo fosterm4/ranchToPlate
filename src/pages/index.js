@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Card from "../components/Card"
 import hayTractor from '../images/HayTractor.jpg'
 import wheatImg from '../images/wheat.jpg'
-import barn from '../images/barn.jpg'
+import barn from '../images/sunsetbackground.jpg'
 import corn from '../images/corn.jpg'
 import VideoPlayer from '../components/video/videoPlayer'
 
@@ -35,7 +35,7 @@ const IndexPage = () => (
         <Card title="Know Where Your Food Comes From"
           text="Test Paragraph"
           image={barn} />
-        <Card title="Directly Support the Backbone of America"
+        <Card title="Directly Support Americas Farmers and Ranchers"
           text="Test Paragraph"
           image={corn} />
       </div>

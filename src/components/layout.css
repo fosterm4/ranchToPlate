@@ -91,6 +91,7 @@ a{
 }
 .Cards h2{
   margin: 50px 20px;
+  margin-bottom: 20px;
   font-size: 60px;
   text-align: center;
   font-weight: 700;
@@ -136,5 +137,5 @@ a{
 
 .HeroGroup h1{
   color: white;
-	-webkit-text-stroke: 2px rgba(59, 59, 59, 0.651);
+
 }
