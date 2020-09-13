@@ -6,11 +6,6 @@ Form{
   margin: auto;
   height: 100%;
   background-color: rgb(224, 224, 224);
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  justify-items: center;
   border-radius: 25px;
 }
 
@@ -18,9 +13,8 @@ Form{
   margin: 15px;
 }
 .wholeForm Input{
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 20px;
+  margin: 10px;
 }
 
 @media(min-width: 468px){
@@ -36,10 +30,28 @@ Form{
 }
 
 
+@media(max-width: 467px){
+  #name Input{
+    margin-left: 30px;
+  }
+  #email Input{
+    margin-left: 30px;
+  }
+  #phone Input{
+    margin-left: 30px;
+  }
+  textarea{
+    margin-left: 30px;
+  }
+}
+
+
 
 textarea{
   height: 150px;
   font-size: 20px;
+  width: 280px;
+  margin-top: 10px;
 }
 .wholeForm Button{
   font-size: 17px;
@@ -68,5 +80,10 @@ textarea{
 
 .wholeForm{
   font-size: 25px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
