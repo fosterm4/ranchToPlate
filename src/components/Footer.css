@@ -15,7 +15,18 @@
   grid-gap: 0px;
   justify-items: center;
 }
-@media(max-width: 435px){
+@media(min-width: 497px){
+  .mainFooter img{
+    margin: 5px;  
+    margin-top: 15px;
+  }
+  .mainFooter p{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+  }
+}
+
+@media(max-width: 496px){
   .mainFooter img{
     margin: 5px;  
     margin-top: 15px;
@@ -24,12 +35,3 @@
     font-size: 15px;
   }
 }
-.mainFooter img{
-  margin: 5px;  
-  margin-top: 15px;
-}
-.mainFooter p{
-  margin-top: 10px;
-  margin-bottom: 10px; 
-}
-

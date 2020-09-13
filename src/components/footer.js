@@ -11,7 +11,7 @@ function Footer() {
       <p> Questions? <Link to="/contact">Contact us</Link>
       </p>
       <div className = "socialIcons">
-        <a target="_blank" href="https://www.facebook.com/Ranch-to-Plate-101775518347698/">
+        <a id = "facebook" target="_blank" href="https://www.facebook.com/Ranch-to-Plate-101775518347698/">
           <img src = {facebook} width = "20px" alt = "facebook"></img>
         </a>
         <a target="_blank" href="https://www.youtube.com/channel/UCJwyCaWMxNht7F2qky4W9gA?view_as=subscriber">
