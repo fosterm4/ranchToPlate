@@ -19,7 +19,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="Cards">
-      <h2>Experience the Ranch to Plate difference(STILL IN DEVELOPMENT...)</h2>
+      <h2>Experience the Ranch to Plate difference</h2>
       <div className="vidPlayer">
         <div className="videoPlayer">
           <VideoPlayer url='https://youtu.be/eEzD-Y97ges' />

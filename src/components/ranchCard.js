@@ -8,7 +8,15 @@ const RanchCard = props => (
     </div>
     <div class="words">
       <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      {props.description.length > 500 ?
+        (
+          <div class = "cutwords">
+            {`${props.description.substring(0, 500)}...`}
+          </div>
+        ) :
+        <p>{props.description}</p>
+      }
+
     </div>
   </div>
 )
