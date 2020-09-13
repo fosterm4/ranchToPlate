@@ -8,23 +8,14 @@ import { Link } from "gatsby"
 
 var stateClicked
 var upperStateClicked
-let ranchCount = 0
 
 export function stateClick(props) {
   upperStateClicked = props;
   stateClicked = props.toLowerCase();
 }
 
-function numRanches(num) {
-  if (num === 0) {
-    return (
-      <h1>No ranches in this state yet...</h1>
-    )
-  }
-}
-
 const SearchResults = ({ data }) => {
-  console.log(stateClicked);
+  let ranchCount = 0
   return (
     <Layout>
       <SEO title="Results" />
