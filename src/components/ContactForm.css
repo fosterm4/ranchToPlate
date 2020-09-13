@@ -15,10 +15,31 @@ Form{
 }
 
 .wholeForm Label{
-  margin: 10px;
+  margin: 15px;
 }
 .wholeForm Input{
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media(min-width: 468px){
+  #name Input{
+    margin-left: 26px;
+  }
+  #email Input{
+    margin-left: 30px;
+  }
+  #phone Input{
+    margin-left: 3px;
+  }
+}
+
+
+
+textarea{
+  height: 150px;
+  font-size: 20px;
 }
 .wholeForm Button{
   font-size: 17px;
@@ -30,12 +51,22 @@ Form{
   border: 2px solid rgba(0, 0, 0, 0.26);
   border-radius: 20px;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-  margin: 20px;
+  margin-top: 30px;
 }
 .wholeForm Button:hover{
   background: rgba(220, 140, 23, 0.945);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   transform: translateY(-3px);
   outline: none;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wholeForm{
+  font-size: 25px;
 }
 
