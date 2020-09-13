@@ -8,35 +8,37 @@ import hayTractor from '../images/HayTractor.jpg'
 import wheatImg from '../images/wheat.jpg'
 import barn from '../images/barn.jpg'
 import corn from '../images/corn.jpg'
-import ResponsivePlayer from "../components/video/responsivePlayer"
+import VideoPlayer from '../components/video/videoPlayer'
 
 const IndexPage = () => (
   <Layout>
-    <div className = "Hero">
-      <div className = "HeroGroup">
+    <div className="Hero">
+      <div className="HeroGroup">
         <h1>Buy local, save money</h1>
 
         <Link to="/ranchSearch/">Find a ranch near me</Link>
       </div>
     </div>
-    <div className = "Cards">
-      <h2>Experience the Ranch to Plate difference(STILL IN DEVELOPMENT...)</h2> 
-      <div className = "vidPlayer">     
-      <ResponsivePlayer url = "https://youtu.be/NpEaa2P7qZI"/></div>
+    <div className="Cards">
+      <h2>Experience the Ranch to Plate difference(STILL IN DEVELOPMENT...)</h2>
+      <div className="vidPlayer">
+        <div className="videoPlayer">
+          <VideoPlayer url='https://youtu.be/eEzD-Y97ges' />
+        </div></div>
       <div className="CardGroup">
 
-        <Card title = "Keep it Local"
-        text = "Test Paragraph"
-        image={hayTractor}/>
-        <Card title = "Save Money"
-        text = "Test Paragraph"
-        image={wheatImg}/>
-        <Card title = "Know Where Your Food Comes From"
-        text = "Test Paragraph"
-        image={barn}/>
-        <Card title = "Directly Support the Backbone of America"
-        text = "Test Paragraph"
-        image={corn}/>
+        <Card title="Keep it Local"
+          text="Test Paragraph"
+          image={hayTractor} />
+        <Card title="Save Money"
+          text="Test Paragraph"
+          image={wheatImg} />
+        <Card title="Know Where Your Food Comes From"
+          text="Test Paragraph"
+          image={barn} />
+        <Card title="Directly Support the Backbone of America"
+          text="Test Paragraph"
+          image={corn} />
       </div>
     </div>
     <SEO title="Ranch to Plate" />
