@@ -12,14 +12,24 @@
   justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 0px;
   justify-items: center;
+}
+@media(max-width: 435px){
+  .mainFooter img{
+    margin: 5px;  
+    margin-top: 15px;
+  }
+  .mainFooter{
+    font-size: 15px;
+  }
+}
+.mainFooter img{
+  margin: 5px;  
+  margin-top: 15px;
 }
 .mainFooter p{
   margin-top: 10px;
   margin-bottom: 10px; 
 }
 
-.mainFooter img{
-  margin: 10px;  
-}

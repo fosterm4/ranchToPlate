@@ -12,13 +12,13 @@ function Footer() {
       </p>
       <div className = "socialIcons">
         <a target="_blank" href="https://www.facebook.com/Ranch-to-Plate-101775518347698/">
-          <img src = {facebook} width = "30px" alt = "facebook"></img>
+          <img src = {facebook} width = "20px" alt = "facebook"></img>
         </a>
         <a target="_blank" href="https://www.youtube.com/channel/UCJwyCaWMxNht7F2qky4W9gA?view_as=subscriber">
-          <img src = {youtube} width = "30px" alt = "youtube"></img>
+          <img src = {youtube} width = "20px" alt = "youtube"></img>
         </a>
         <a target="_blank" href="https://www.instagram.com/ranchtoplate/?hl=en">
-          <img src = {instagram} width = "30px" alt = "instagram"></img>
+          <img src = {instagram} width = "20px" alt = "instagram"></img>
         </a>
       </div>
       < p className = "copyright">
