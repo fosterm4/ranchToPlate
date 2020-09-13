@@ -31,6 +31,7 @@ const ContactForm = () => {
       body: encode({ "form-name": "contact", ...formState })
     })
       .then(() => alert("Success! Your information has been submitted and you will be contacted shortly."))
+      e.target.reset()
       .catch(error => alert(error));
 
     e.preventDefault();
