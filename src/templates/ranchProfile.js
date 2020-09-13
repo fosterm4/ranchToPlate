@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import '../components/ranchProfile.css'
+import SEO from "../components/seo"
 
 export default function RanchProfile({pageContext}) {
   
   return (
     <Layout>
+      <SEO title={pageContext.ranch.ranchName} />
       <div>
         <div className = "profileDiv">
           <img id = "profileHeader" src={pageContext.ranch.headerImage.asset.url} alt = "img"/>

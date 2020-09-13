@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Ranch to Plate`,
     description: `The best place to find a ranch near you and order fresh meat straight from the rancher. No hassle, save money, know where your food comes from.`,
-    ketwords: 'beef, pork, chicken, ranch near me, ranches near me, order meat, order fresh meat, find a rancher, ranches near me, ranch, cows, eggs, meat, fresh meat, fresh beef, order beef, local beef, local meat, local food, best place to find local meat',
-    author: `@gatsbyjs`,
+    keywords: 'beef, pork, chicken, ranch near me, ranches near me, order meat, order fresh meat, find a rancher, ranches near me, ranch, cows, eggs, meat, fresh meat, fresh beef, order beef, local beef, local meat, local food, best place to find local meat',
+    author: `Michael Foster`,
   },
   plugins: [
     
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logotranscrop.png`, // This path is relative to the root of the site.
       },
       
     },

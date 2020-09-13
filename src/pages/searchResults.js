@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import '../components/searchResults.css'
 import RanchCard from "../components/ranchCard"
-
+import SEO from "../components/seo"
 var stateClicked
 var upperStateClicked
 
@@ -16,6 +16,7 @@ const SearchResults = ({ data }) => {
   console.log(stateClicked);
   return (
     <Layout>
+      <SEO title="Results" />
       <div className="background">
       </div>
       <h1>Showing Ranches in {upperStateClicked}</h1>

@@ -3,11 +3,14 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import '../components/aboutUs.css'
 import VideoPlayer from '../components/video/videoPlayer'
+import SEO from "../components/seo"
 
 class AboutUs extends Component {
   render() {
     return (
+      
       <Layout>
+        <SEO title="About Us" />
         <div className="background">
         </div>
         <div className="pageText">

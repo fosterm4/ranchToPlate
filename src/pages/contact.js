@@ -3,11 +3,13 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import '../components/Contact.css'
 import ContactForm from "../components/ContactForm"
+import SEO from "../components/seo"
 
 class Contact extends Component{
   render(){
     return(
       <Layout>
+        <SEO title="Contact Us" />
         <div className = "onBackground">
           <div className = "backgroundHeader">
             <h2>
