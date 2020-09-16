@@ -40,7 +40,7 @@ class AboutUs extends Component {
           </p>
         </div>
         <div className="videoPlayer">
-          <VideoPlayer url = 'https://youtu.be/eEzD-Y97ges' />
+          <VideoPlayer url = 'https://youtu.be/g6GSHmYBLWY' />
         </div>
 
       </Layout>

@@ -22,7 +22,7 @@ const IndexPage = () => (
       <h2>Experience the Ranch to Plate difference</h2>
       <div className="vidPlayer">
         <div className="videoPlayer">
-          <VideoPlayer url='https://youtu.be/eEzD-Y97ges' />
+          <VideoPlayer url='https://youtu.be/g6GSHmYBLWY' />
         </div></div>
       <div className="CardGroup">
 
