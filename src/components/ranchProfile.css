@@ -23,6 +23,11 @@ hr{
   width: 50%;
 }
 
+#location{
+  font-style: italic;
+  margin: 0 auto;
+}
+
 #ranchDescription{
   width: 75%;
   margin-left: auto;

@@ -30,7 +30,7 @@ const SearchResults = ({ data }) => {
             return (
               <div key={edge.node.slug.current}>
                 <a href={edge.node.slug.current}>
-                  <RanchCard title={edge.node.ranchName} image={edge.node.profileImage.asset.url} description={edge.node.description}></RanchCard>
+                  <RanchCard title={edge.node.ranchName} image={edge.node.profileImage.asset.url} city={edge.node.city} state={upperStateClicked} description={edge.node.description}></RanchCard>
                 </a>
               </div>
             )
@@ -79,6 +79,7 @@ query RanchQuery{
         phone
         id
         state
+        city
         zip
       }
     }

@@ -8,7 +8,11 @@ const RanchCard = props => (
       <img src={props.image} height="250" width="250" tabindex="0" />
     </div>
     <div class="words">
+      <div id = "locationBlock">
       <h3>{props.title}</h3>
+        <h5 id = "locationLine">{props.city}, {props.state}</h5>
+      </div>
+      
       <MediaQuery query="(min-device-width: 1390px)">
         {props.description.length > 500 ?
           (

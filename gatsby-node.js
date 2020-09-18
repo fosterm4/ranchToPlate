@@ -33,6 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
             phone
             id
             state
+            city
             zip
           }
         }

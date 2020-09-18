@@ -56,6 +56,11 @@ export default createSchema({
           title: 'State'
         },
         {
+          name: 'city',
+          type: 'string',
+          title: 'City'
+        },
+        {
           name: 'zip',
           type: 'number',
           title: 'Zip Code'

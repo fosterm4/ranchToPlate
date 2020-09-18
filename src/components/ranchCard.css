@@ -26,7 +26,7 @@
   position: relative;
 
   margin: 0 auto;
-  width: 190px;
+
 }
 
 #Card p{
@@ -37,8 +37,13 @@
   margin-right: auto;
 }
 
-.cutWords p{
-  
+#locationBlock{
+  text-align: center;
+}
+
+h5{
+  margin: 0 auto;
+  font-style: italic;
 }
 
 .words{
