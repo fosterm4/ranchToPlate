@@ -11,7 +11,7 @@ const AboutUs = () => (
   <StaticQuery
     query={graphql`
     query {
-      desktop: file(relativePath: { eq: "LetTherBeMeat.jpg" }) {
+      desktop: file(relativePath: { eq: "corn.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
