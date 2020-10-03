@@ -1,19 +1,18 @@
 .onBackground{
-  background: url('../images/night-sky-2116521_1920.jpg');
   height: 500px;
   background-size: cover;
   background-position: center;
-}
-.backgroundHeader{
   text-align: center;
 }
-
-.backgroundHeader h2{
-  margin:0 auto;
-  padding-top: 125px;
+.onBackground h2{
+  margin:auto;
   color: white;
   font-size: 70px;
   width: 370px;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 15%;
 }
 
 .Cards h2{

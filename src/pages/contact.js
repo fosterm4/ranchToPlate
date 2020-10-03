@@ -1,33 +1,54 @@
-import React, { Component } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import '../components/Contact.css'
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
+import { StaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
-class Contact extends Component{
-  render(){
-    return(
-      <Layout>
-        <SEO title="Contact Us" />
-        <div className = "onBackground">
-          <div className = "backgroundHeader">
-            <h2>
-              Cut out the middle man.
-            </h2>
-          </div>
-        </div>
-        <div className = "Cards">
-          <h2>Join our Growing Community of Farmers and Ranchers today</h2> 
-        </div>
-        <div className = "contactForm">
-          <ContactForm/>
-        </div>
-      </Layout>
-    );
+const ContactPage = () => (
+  <StaticQuery
+    query={graphql`
+  query {
+    desktop: file(relativePath: { eq: "night-sky-2116521_1920.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
-}
-  
+`}
+
+    render={data => {
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <Layout>
+          <SEO title="Contact Us" />
+          <div className="onBackground">
+            <BackgroundImage
+              className="onBackground"
+              fluid={imageData}
+              backgroundColor={`#040e18`}
+            ></BackgroundImage>
+            <h2>
+                Cut out the middle man.
+              </h2>
+          </div>
+          <div className="Cards">
+            <h2>Join our Growing Community of Farmers and Ranchers today</h2>
+          </div>
+          <div className="contactForm">
+            <ContactForm />
+          </div>
+        </Layout>
+      )
+    }}
+  />
+)
 
 
-export default Contact
+
+export default ContactPage
+

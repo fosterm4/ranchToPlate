@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import '../components/searchResults.css'
 import RanchCard from "../components/ranchCard"
 import SEO from "../components/seo"
-import { Link, StaticQuery } from "gatsby"
+import { Link} from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
 var stateClicked
