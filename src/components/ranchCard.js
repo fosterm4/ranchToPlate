@@ -5,7 +5,7 @@ import MediaQuery from 'react-responsive'
 const RanchCard = props => (
   <div id="Card">
     <div class="profileImage">
-      <img src={props.image} height="250" width="250" tabindex="0" />
+      <img src={props.image} height="250" width="250" alt = "profileImg"/>
     </div>
     <div class="words">
       <div id = "locationBlock">
