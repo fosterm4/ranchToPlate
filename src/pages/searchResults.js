@@ -4,7 +4,8 @@ import Layout from "../components/layout"
 import '../components/searchResults.css'
 import RanchCard from "../components/ranchCard"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+import { Link, StaticQuery } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
 var stateClicked
 var upperStateClicked
@@ -15,11 +16,17 @@ export function stateClick(props) {
 }
 
 const SearchResults = ({ data }) => {
+  const imageData = data.desktop.childImageSharp.fluid
   let ranchCount = 0
   return (
     <Layout>
       <SEO title="Results" />
       <div className="background">
+        <BackgroundImage
+          className="background"
+          fluid={imageData}
+          backgroundColor={`#040e18`}
+        ></BackgroundImage>
       </div>
       <h1>Showing Ranches in {upperStateClicked}</h1>
       <div className="ranchCards">
@@ -35,8 +42,8 @@ const SearchResults = ({ data }) => {
               </div>
             )
           }
-          else{
-            return("")
+          else {
+            return ("")
           }
         })}
       </div>
@@ -59,6 +66,13 @@ export default SearchResults
 
 export const query = graphql`
 query RanchQuery{
+  desktop: file(relativePath: { eq: "cattle-drive-793676_1280.jpg" }) {
+    childImageSharp {
+      fluid(quality: 90, maxWidth: 1920) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
   allSanityRanch(filter: { slug: { current: { ne: null } } }) {
     edges {
       node {
