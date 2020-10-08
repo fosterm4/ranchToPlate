@@ -8,8 +8,7 @@ module.exports = {
     keywords: 'beef, pork, chicken, ranch near me, ranches near me, order meat, order fresh meat, find a rancher, ranches near me, ranch, cows, eggs, meat, fresh meat, fresh beef, order beef, local beef, local meat, local food, best place to find local meat',
     author: `Michael Foster`,
   },
-  plugins: [
-    
+  plugins: [  
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,11 +37,12 @@ module.exports = {
       options: {
         projectId: `izbfyvmc`,
         dataset: `ranches`,
-        
+        token: process.env.SANITY_TOKEN,
+        watchMode: true,
+        overlayDrafts: true,
         // If the Sanity GraphQL API was deployed using `--tag <name>`,
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: 'default',
-        
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
