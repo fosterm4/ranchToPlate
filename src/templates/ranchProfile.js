@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import '../components/ranchProfile.css'
 import SEO from "../components/seo"
-
+import Mailto from 'react-protected-mailto'
 export default function RanchProfile({ pageContext }) {
 
   return (
@@ -18,9 +18,8 @@ export default function RanchProfile({ pageContext }) {
         <hr></hr>
         <p id="ranchDescription">{pageContext.ranch.description}</p>
         <h2>Contact</h2>
-        <h4>Email: {pageContext.ranch.email}</h4>
-        <h4>Phone: {pageContext.ranch.phone}</h4>
-
+        <h4>Email: <Mailto email = {pageContext.ranch.email} /></h4>
+        <h4>Phone: <Mailto tel = {pageContext.ranch.phone} /></h4>
       </div>
     </Layout>
   )

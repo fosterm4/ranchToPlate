@@ -72,7 +72,7 @@ export default createSchema({
         },
         {
           name: 'phone',
-          type: 'number',
+          type: 'string',
           title: 'Phone Number'
         },
         {
